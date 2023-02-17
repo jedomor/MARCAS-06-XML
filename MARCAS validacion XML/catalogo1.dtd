@@ -1,0 +1,12 @@
+<!ELEMENT catalogo (producto)>
+<!ELEMENT producto (modelo+)>
+<!ATTLIST producto descripcion CDATA #REQUIRED>
+<!ATTLIST producto imagen_producto NMTOKEN #REQUIRED>
+<!ELEMENT modelo (id_modelo,precio,tallas,opiniones?)>
+<!ATTLIST modelo genero NMTOKEN #REQUIRED>
+<!ELEMENT id_modelo (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT tallas (medium,large,small?,xlarge?)>
+<!ELEMENT medium (color+)>
+<!ELEMENT color (#PCDATA)>
+<!ATTLIST color talla (L|M|S|XL) #REQUIRED><!ATTLIST color imagen (black_cardigan.jpg|burgundy_cardigan.jpg|navy_cardigan.jpg|red_cardigan.jpg) #REQUIRED><!ELEMENT large (color+)><!ELEMENT small (color+)><!ELEMENT xlarge (color+)><!ELEMENT opiniones (opinion)><!ELEMENT opinion (#PCDATA)>

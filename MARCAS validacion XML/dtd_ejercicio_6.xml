@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE ediciones_sotero SYSTEM "dtd_ejercicio_6.dtd">
+<ediciones_sotero>
+    <informe tipo="ventas">
+        <encabezado>
+            <fecha>07/02/2019</fecha>
+            <descripcion>Informe de ventas para las regiones Norte, Centro y Sur</descripcion>
+        </encabezado>
+        <datos>
+            <region zona="norte">
+                <trimestre tri="1">
+                    <ventas>24000</ventas>
+                </trimestre>
+                <trimestre tri="2">
+                    <ventas>38600</ventas>
+                </trimestre>
+                <trimestre tri="3">
+                    <ventas>NO_INFO</ventas>
+                </trimestre>
+                <trimestre tri="4">
+                    <ventas>NO_INFO</ventas>
+                </trimestre>
+            </region>
+            <region zona="centro">
+                <trimestre tri="1">
+                    <ventas>NO_INFO</ventas>
+                </trimestre>
+                <trimestre tri="2">
+                    <ventas>16080</ventas>
+                </trimestre>
+                <trimestre tri="3">
+                    <ventas>25000</ventas>
+                </trimestre>
+                <trimestre tri="4">
+                    <ventas>29000</ventas>
+                </trimestre>
+            </region>
+            <region zona="sur">
+                <trimestre tri="1">
+                    <ventas>27000</ventas>
+                </trimestre>
+                <trimestre tri="2">
+                    <ventas>31400</ventas>
+                </trimestre>
+                <trimestre tri="3">
+                    <ventas>40100</ventas>
+                </trimestre>
+                <trimestre tri="4">
+                    <ventas>30000</ventas>
+                </trimestre>
+            </region>
+        </datos>
+    </informe>
+</ediciones_sotero>

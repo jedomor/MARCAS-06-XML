@@ -1,0 +1,12 @@
+<!ELEMENT ediciones_sotero (informe)>
+<!ENTITY sotero SYSTEM "Ediciones Sotero">
+<!ELEMENT informe (encabezado,datos)>
+<!ATTLIST informe tipo NMTOKEN #REQUIRED>
+<!ELEMENT encabezado (fecha,descripcion)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT datos (region+)>
+<!ELEMENT region (trimestre+)>
+<!ATTLIST region zona (norte|centro|sur) NMTOKEN #REQUIRED>
+<!ELEMENT trimestre (ventas)>
+<!ATTLIST trimestre tri (1|2|3|4) #REQUIRED><!ELEMENT ventas (#PCDATA)>

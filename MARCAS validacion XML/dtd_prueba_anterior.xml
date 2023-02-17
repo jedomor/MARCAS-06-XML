@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cartilla SYSTEM "dtd_prueba_anterior1.dtd">
+<cartilla>
+    <propietario>
+        <nombre>Rosa Rosae</nombre>
+        <direccion>
+            <calle>Santo Domingo de Guzmán</calle>
+            <numero>S/N</numero>
+            <poblacion>San Juan de Aznalfarche</poblacion>
+        </direccion>
+    </propietario>
+    <animal especie="gato" sexo="macho" chip="A-12345">
+        <color>negro</color>
+        <fechaNacimiento>2021-02-21</fechaNacimiento>
+        <nombre>Isidoro</nombre>
+        <vacunas>
+            <vacuna>
+                <fechaVacunacion>2021-04-21</fechaVacunacion>
+                <nombreVacuna>Tetravalente</nombreVacuna>
+                <veterinario>Enrique</veterinario>
+                <observaciones>El gato presentó una reacción después de la vacunación.</observaciones>
+            </vacuna>
+            <vacuna>
+                <fechaVacunacion>2021-05-27</fechaVacunacion>
+                <nombreVacuna>Rabia</nombreVacuna>
+                <veterinario>María Jesús</veterinario>
+            </vacuna>
+        </vacunas>
+        <alergias>
+            <alergia>pollo</alergia>
+            <alergia>marisco</alergia>
+        </alergias>
+    </animal>
+</cartilla>

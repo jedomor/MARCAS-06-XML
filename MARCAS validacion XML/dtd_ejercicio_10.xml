@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reparaciones SYSTEM "dtd_ejercicio_10.dtd">
+<reparaciones>
+
+    <cliente id="C1" dni="12345678A" telefono="654654654" email="obiwan@padawan.sw">
+        <nombre>Ewan</nombre>
+        <apellidos>Mc Gregor</apellidos>
+        <dispositivos>
+            <dispositivo propietario="C1">
+                <tipo>Sable de luz</tipo>
+                <marca>Coruscantii</marca>
+                <modelo>Azul</modelo>
+                <reparaciones>
+                    <reparacion horas_dedicadas="3">
+                        <fecha>4/5/2023</fecha>
+                        <descripcion_cliente>no enciende</descripcion_cliente>
+                        <solucion_aplicada>cambio de pilas</solucion_aplicada>
+                    </reparacion>
+                </reparaciones>
+            </dispositivo>
+        </dispositivos>
+    </cliente>
+
+    <cliente id="C2" dni="98765432Z" telefono="654987321" email="darth@vader.sw">
+        <nombre>Hayden</nombre>
+        <apellidos>Christensen</apellidos>
+        <dispositivos>
+            <dispositivo propietario="C2">
+                <tipo>Sable de luz</tipo>
+                <marca>Mataniños 3000</marca>
+                <modelo>Rojo</modelo>
+            </dispositivo>
+            <dispositivo propietario="C2">
+                <tipo>Teclado de pecho</tipo>
+                <marca>Respibien</marca>
+                <modelo>Lucecitas</modelo>
+            </dispositivo>
+        </dispositivos>
+    </cliente>
+
+</reparaciones>

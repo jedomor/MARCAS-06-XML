@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE periodico [
+<!ELEMENT periodico (articulo+)>
+<!ELEMENT articulo (titulo, subtitulo?, contenido, autor)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT subtitulo (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+]>
+
+<periodico>
+    <articulo>
+        <titulo>Asalto al Capitolio</titulo>
+        <subtitulo>Cuernos en la democracia estadounidense</subtitulo>
+        <contenido>El pasado día 6 de enero...</contenido>
+        <autor>Juan de la Olla</autor>
+    </articulo>
+    <articulo>
+        <titulo>Cumbres borrascosas en Madrid</titulo>
+        <contenido>La borrasca Filomena ha dejado...</contenido>
+        <autor>Pedro Flores</autor>
+    </articulo>
+</periodico>

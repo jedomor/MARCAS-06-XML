@@ -1,0 +1,20 @@
+<!ELEMENT cartilla (propietario?,animal+)>
+<!ELEMENT propietario (nombre,direccion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (calle,numero,poblacion)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT animal (color,fechaNacimiento?,nombre,vacuna+,alergias)>
+<!ATTLIST animal especie CDATA #REQUIRED>
+<!ATTLIST animal sexo (macho | hembra) #IMPLIED >
+<!ATTLIST animal chip CDATA #REQUIRED>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT fechaNacimiento (#PCDATA)>
+<!ELEMENT vacuna (fechaVacunacion,nombreVacuna,veterinario,observaciones?)>
+<!ELEMENT fechaVacunacion (#PCDATA)>
+<!ELEMENT nombreVacuna (#PCDATA)>
+<!ELEMENT veterinario (#PCDATA)>
+<!ELEMENT observaciones (#PCDATA)>
+<!ELEMENT alergias (alergia+)>
+<!ELEMENT alergia (#PCDATA)>

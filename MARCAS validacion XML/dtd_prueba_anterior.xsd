@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cartilla">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="propietario">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="direccion">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="calle" type="xs:string" />
+                                        <xs:element name="numero" type="xs:string" />
+                                        <xs:element name="poblacion" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="animal">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="color" type="xs:string" />
+                            <xs:element name="fechaNacimiento" type="xs:string" />
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="vacunas">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="vacuna" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="fechaVacunacion"
+                                                        type="xs:string" />
+                                                    <xs:element name="nombreVacuna" type="xs:string" />
+                                                    <xs:element name="veterinario" type="xs:string" />
+                                                    <xs:element name="observaciones" minOccurs="0"
+                                                        type="xs:string" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="alergias">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="alergia" maxOccurs="unbounded"
+                                            type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="especie" use="required" />
+                        <xs:attribute name="sexo" use="required" />
+                        <xs:attribute name="chip" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

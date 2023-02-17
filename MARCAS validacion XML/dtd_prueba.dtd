@@ -1,0 +1,5 @@
+<!ELEMENT nota (a, de, cabecera, cuerpo)>
+<!ELEMENT a (#PCDATA)>
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT cabecera (#PCDATA)>
+<!ELEMENT cuerpo (#PCDATA)>

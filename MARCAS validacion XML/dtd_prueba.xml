@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE nota SYSTEM "Prueba.dtd">
+<nota>
+  <a>Manuel</a>
+  <de>Ana</de>
+  <cabecera>Recordatorio</cabecera>
+  <cuerpo>No olvides coger las llaves del coche</cuerpo>
+</nota>

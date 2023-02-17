@@ -1,0 +1,19 @@
+<!-- Fichero dtd del examen-->
+<!ELEMENT catalogo (producto*)>
+<!ELEMENT producto (modelo+)>
+<!ATTLIST producto descripcion CDATA #REQUIRED>
+<!ATTLIST producto imagen_producto CDATA #REQUIRED>
+<!ELEMENT modelo (id_modelo, precio, tallas, opiniones?)>
+<!ATTLIST modelo genero (Hombre | Mujer) #IMPLIED>
+<!ELEMENT id_modelo (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT tallas (small?, medium?, large?, xlarge?)>
+<!ELEMENT small (color+)>
+<!ELEMENT medium (color+)>
+<!ELEMENT large (color+)>
+<!ELEMENT xlarge (color+)>
+<!ELEMENT color (#PCDATA)>
+<!ATTLIST color talla (S|M|L|XL) #REQUIRED>
+<!ATTLIST color imagen CDATA "no-image.jpg">
+<!ELEMENT opiniones (opinion+)>
+<!ELEMENT opinion (#PCDATA)>
