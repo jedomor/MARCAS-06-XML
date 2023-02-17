@@ -6,7 +6,7 @@
                 <xs:element name="venta" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="vehiculo">
+                            <xs:element name="vehiculo" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="marca" type="xs:string" />
@@ -21,8 +21,8 @@
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
-                                    <xs:attribute name="matricula" default="0000-AAA"/>
-                                </xs:complexType>i
+                                    <xs:attribute name="matricula" default="0000-AAA" />
+                                </xs:complexType>
                             </xs:element>
                         </xs:sequence>
                     </xs:complexType>

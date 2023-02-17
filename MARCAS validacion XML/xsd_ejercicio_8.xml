@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ventas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation="xsd_ejercicio_8.xsd">
+<?xml-stylesheet href="file.css" type="text/css"?>
+<ventas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd_ejercicio_81.xsd">
     <venta>
         <vehiculo matricula='4534-FRG'>
             <marca>Seat</marca>

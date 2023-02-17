@@ -1,0 +1,12 @@
+venta, vehiculo, marca, modelo, propietario{
+    display: block;
+}
+marca {
+    color: red;
+}
+modelo{
+    color: green;
+}
+propietario{
+    color: blue;
+}
