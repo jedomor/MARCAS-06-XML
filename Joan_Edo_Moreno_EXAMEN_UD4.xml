@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plantilla_trabajadores>
+    <empleado dni="22554488T">
+        <nombre>Juan Roig</nombre>
+        <cargo>Distribuidor</cargo>
+        <dispositivos>
+            <dispositivo id="1">
+                <tipo>Móvil</tipo>
+                <marca>Huawei</marca>
+                <modelo>P10</modelo>
+            </dispositivo>
+            <dispositivo id="2">
+                <tipo>Tablet</tipo>
+                <marca>Samsung</marca>
+                <modelo>S8</modelo>
+            </dispositivo>
+        </dispositivos>
+    </empleado>
+    <empleado dni="33445522G">
+        <nombre>Ana Gil</nombre>
+        <cargo>Comercial</cargo>
+        <dispositivos>
+            <dispositivo id="3">
+                <tipo>Móvil</tipo>
+                <marca>Huawei</marca>
+                <modelo>P9</modelo>
+            </dispositivo>
+        </dispositivos>
+    </empleado>
+    <empleado dni="44557788R">
+        <nombre>Sole Astudillo </nombre>
+        <cargo>Directora</cargo>
+        <dispositivos>
+            <dispositivo id="4">
+                <tipo>Tablet</tipo>
+                <marca>Samsung</marca>
+                <modelo>A2</modelo>
+            </dispositivo>
+        </dispositivos>
+    </empleado>
+</plantilla_trabajadores>

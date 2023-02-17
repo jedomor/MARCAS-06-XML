@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ejercicios>
+	<ejercicio_1>
+		<word>
+			<letter>A
+		<letter>D
+			<letter>L</letter>
+					<letter>K</letter>
+				</letter>
+				<letter>M
+			<letter>I</letter>
+					<letter>E</letter>
+				</letter>
+			</letter>
+		</word>
+	</ejercicio_1>
+	
+	<ejercicio_2>
+		<cd_oferta>
+			<titulo>Still got the blues</titulo>
+			<artista>Gary Moore</artista>
+			<pais>UK</pais>
+			<compania_discografica>Virgin Records</compania_discografica>
+			<precio>10.20</precio>
+			<ano_publicacion>1990</ano_publicacion>
+		</cd_oferta>
+		<cd_oferta>
+			<titulo>One night only</titulo>
+			<artista>Bee Gees</artista>
+			<pais>UK</pais>
+			<compania_discografica>Polydor</compania_discografica>
+			<precio>10.90</precio>
+			<ano_publicacion>1998</ano_publicacion>
+		</cd_oferta>
+		
+		
+		
+	</ejercicio_2>
+	
+	
+	
+	
+</ejercicios>

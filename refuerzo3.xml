@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa_reparaciones>
+    <cliente dni="62585874F">
+        <nombre>Manuela</nombre>
+        <apellidos>Fago Hunna</apellidos>
+        <telefono>699321568</telefono>
+        <email>m.fagohuna@terra.es</email>
+        <dispositivo>
+            <tipo>SmartWatch</tipo>
+            <marca>Apple</marca>
+            <modelo>SmartWatch2023</modelo>
+            <reparacion>
+                <fecha>16/Ene/2021</fecha>
+                <descripcion_problema>No enciende</descripcion_problema>
+                <solucion_aplicada>Carga de batería (reemplazo de cargador)</solucion_aplicada>
+                <horas_trabajo>1</horas_trabajo>
+            </reparacion>
+        </dispositivo>
+    </cliente>
+    <cliente dni="58439851R">
+        <nombre>Elhmas</nombre>
+        <apellidos>Thon Toudelbario</apellidos>
+        <telefono>678259369</telefono>
+        <email>tntdlbrr@mixmail.com</email>
+        <dispositivo>
+            <tipo>PC Sobremesa</tipo>
+            <marca>MSI</marca>
+            <modelo>GamingPeppiner790TurboSuperPlusDeLaMuerte</modelo>
+        </dispositivo>
+        <dispositivo>
+            <tipo>PC Portatil</tipo>
+            <marca>Compaq</marca>
+            <modelo>Presario Pessimo</modelo>
+        </dispositivo>
+    </cliente>
+</empresa_reparaciones>

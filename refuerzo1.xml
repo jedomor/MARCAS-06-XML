@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<triathlon>
+    <atleta dni="12654123T">
+        <nombre>Juan</nombre>
+        <mejores_tiempos>
+            <carrera>2h 10m 15s</carrera>
+            <ciclismo>1h 58m 10s</ciclismo>
+            <natacion>1h 30m 50s</natacion>
+        </mejores_tiempos>
+    </atleta>
+    <atleta dni="62854854Z">
+        <nombre>Inma</nombre>
+        <mejores_tiempos>
+            <carrera>2h 05m 40s</carrera>
+            <ciclismo>2h 24m 11s</ciclismo>
+            <natacion>1h 54m 01s</natacion>
+        </mejores_tiempos>
+    </atleta>
+        <atleta dni="85478165T">
+        <nombre>Pedro</nombre>
+        <mejores_tiempos>
+            <carrera>1h 54m 15s</carrera>
+            <ciclismo>2h 28m 10</ciclismo>
+            <natacion>1h 10m 24s</natacion>
+        </mejores_tiempos>
+    </atleta>
+</triathlon>

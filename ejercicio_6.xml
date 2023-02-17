@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calificacion>
+    <alumno id="1">
+        <apellidos>Álvarez Polo</apellidos>
+        <nombre>Iván</nombre>
+        <_1P>2,21</_1P>
+        <_2P>0,00</_2P>
+        <_3P>3,20</_3P>
+        <FINAL>1,80</FINAL>
+    </alumno>
+    <alumno id="2">
+        <apellidos>Bejarano Arroyo</apellidos>
+        <nombre>Sergio</nombre>
+        <_1P>8,69</_1P>
+        <_2P>5,68</_2P>
+        <_3P>5,70</_3P>
+        <FINAL>6,69</FINAL>
+    </alumno>
+    <alumno id="3">
+        <apellidos>Calero Tomé</apellidos>
+        <nombre>Ismael</nombre>
+        <_1P>8,05</_1P>
+        <_2P>7,75</_2P>
+        <_3P>6,50</_3P>
+        <FINAL>7,44</FINAL>
+    </alumno>
+</calificacion>

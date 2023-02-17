@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinica>
+    <cliente>
+        <nombre>Petete</nombre>
+        <apeliidos>Venito Camela</apellidos>
+        <dni>65873285F</dni>
+        <telefono>986325874</telefono>
+        <mascota>
+            <nombre_mascota>Calcetines</nombre_mascota>
+            <raza>Perro de aguas</raza>
+            <fecha_nac>23Ago2012</fecha_nac>
+        </mascota>
+    </cliente>
+    <cliente>
+        <nombre>Juanita</nombre>
+        <apeliidos>Melap Ela</apellidos>
+        <dni>95387564R</dni>
+        <telefono>678259634</telefono>
+        <mascota>
+            <nombre_mascota>Tigrillo</nombre_mascota>
+            <raza>Gato atigrado</raza>
+            <fecha_nac>11Dic2021</fecha_nac>
+        </mascota>
+        <mascota>
+            <nombre_mascota>Vaquita</nombre_mascota>
+            <raza>Perro dalmata</raza>
+            <fecha_nac>14Feb2017</fecha_nac>
+        </mascota>
+    </cliente>
+</clinica>
