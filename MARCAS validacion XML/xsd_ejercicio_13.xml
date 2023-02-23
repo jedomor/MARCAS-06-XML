@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<factura cod_fac="999">
+<factura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="xsd_ejercicio_13.xsd" cod_fac="999">
     <datos_empresa>
         <nombre>Equipos Digitales S.L.</nombre>
         <dir>Av. Valladolid</dir>

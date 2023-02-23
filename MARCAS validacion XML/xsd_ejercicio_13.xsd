@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!--TIPOS SIMPLES-->
+    <xs:simpleType name="tipo_codigo">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:totalDigits value="6" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipo_cod_postal">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[0-9]{5}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipo_importe">
+        <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="8" />
+            <xs:fractionDigits value="2" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipo_cif">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z][0-9]{8}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipo_cantidad">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipo_forma_pago">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="efectivo" />
+            <xs:enumeration value="tarjeta" />
+            <xs:enumeration value="transferencia" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipo_moneda">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="dolar" />
+            <xs:enumeration value="euro" />
+        </xs:restriction>
+    </xs:simpleType>
+<!--TIPOS COMPLEJO-->
+    <xs:complexType name="tipo_datos_empresa">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="dir" type="xs:string" />
+            <xs:element name="cod_postal" type="tipo_cod_postal" />
+            <xs:element name="poblacion" type="xs:string" />
+            <xs:element name="provincia" type="xs:string" />
+            <xs:element name="cif" type="tipo_cif" />
+            <xs:element name="telefono" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tipo_datos_cliente">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="dir_env" type="xs:string" />
+            <xs:element name="cod_postal" type="xs:string" />
+            <xs:element name="poblacion" type="xs:string" />
+            <xs:element name="provincia" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="cod_cli" type="xs:integer" use="required" />
+    </xs:complexType>
+    <xs:complexType name="tipo_datos_factura">
+        <xs:sequence>
+            <xs:element name="fecha" type="xs:date" />
+            <xs:element name="linea" maxOccurs="unbounded" type="tipo_linea_factura"/>
+            <xs:element name="base" type="tipo_importe" />
+            <xs:element name="cuota_iva" type="tipo_importe" />
+            <xs:element name="total" type="tipo_importe" />
+        </xs:sequence>
+        <xs:attribute name="cod_ped" type="xs:integer" use="required" />
+        <xs:attribute name="iva" type="xs:positiveInteger" use="required" />
+        <xs:attribute name="forma_pago" type="tipo_forma_pago" use="required" />
+        <xs:attribute name="moneda" type="tipo_moneda" use="required" />
+    </xs:complexType>
+    <xs:complexType name="tipo_linea_factura">
+        <xs:sequence>
+            <xs:element name="ref" type="xs:string" />
+            <xs:element name="desc" type="xs:string" />
+            <xs:element name="cant" type="tipo_cantidad" />
+            <xs:element name="precio" type="tipo_importe" />
+            <xs:element name="subtotal" type="tipo_importe" />
+        </xs:sequence>
+    </xs:complexType>
+
+<!--VALIDACIÓN-->
+    <xs:element name="factura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="datos_empresa" type="tipo_datos_empresa"/>
+                <xs:element name="datos_cliente" type="tipo_datos_cliente"/>
+                <xs:element name="datos_factura" type="tipo_datos_factura"/>
+            </xs:sequence>
+            <xs:attribute name="cod_fac" type="tipo_codigo" use="required" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
